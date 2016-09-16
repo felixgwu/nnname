@@ -24,7 +24,7 @@ require 'nnname'
 It sets the name of the module to `name` and return the module
 
 ### find(name, last)
-It returns the first nn.Module whose name is `name` in the nn.Container by default. It returns the last module with that specific name.
+It returns the first nn.Module whose name is `name` in the nn.Container by default. It returns the last module with that specific name when `last` is `true`.
 
 ### findAll(name)
 It returns a table of modules in the nn.Container whose name is `name`.
