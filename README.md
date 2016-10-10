@@ -1,10 +1,10 @@
 # nnname
-Naming features for Torch nn
+Naming features for Torch nn modules
 
 ## Installation
 
 ```sh
-luarock install https://raw.githubusercontent.com/felixgwu/nnname/master/rocks/nnname-scm-1.rockspec
+luarock install nnname
 ```
 
 ## Usage
@@ -20,13 +20,13 @@ require 'nnname'
 ```
 ## API
 
-### setName(name)
-It sets the name of the module to `name` and return the module
+### [nn.Module] setName(name)
+It sets the name of the module to `name` and return the module.
 
-### find(name, last)
+### [nn.Module] find(name, last)
 It returns the first nn.Module whose name is `name` in the nn.Container by default. It returns the last module with that specific name when `last` is `true`.
 
-### findAll(name)
+### [table] findAll(name)
 It returns a table of modules in the nn.Container whose name is `name`.
 
 
